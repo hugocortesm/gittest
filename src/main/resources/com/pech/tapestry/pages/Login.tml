@@ -1,0 +1,25 @@
+<html t:type="layout" title="beginer Index"
+	t:sidebarTitle="Framework Version"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+	xmlns:p="tapestry:parameter">
+<form t:type="form" t:id="loginForm">
+	<t:zone id="loginZone">
+		<div>
+			<div id="username">
+				<t:label for="username">Username:&nbsp;</t:label>
+				<input t:type="TextField" t:id="username"
+					t:validate="required,minlength=3" />
+			</div>
+			<div id="password">
+				<t:label for="password">Password:&nbsp;</t:label>
+				<input t:type="TextField" t:id="password"
+					t:validate="required,minlength=3" />
+			</div>
+			<div id="submit">
+				<input type="submit" value="Login"/>
+			</div>
+		</div>
+		<div>Helo ${user.username}</div>
+	</t:zone>
+</form>
+</html>
