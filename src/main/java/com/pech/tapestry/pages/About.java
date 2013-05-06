@@ -7,6 +7,8 @@ public class About {
 	private String content;
 
 	private String otherStuff;
+	
+	private String siteName;
 
 	public String getTitlePage() {
 		return titlePage;
@@ -30,6 +32,14 @@ public class About {
 
 	public void setOtherStuff(String otherStuff) {
 		this.otherStuff = otherStuff;
+	}
+
+	public String getSiteName() {
+		return siteName;
+	}
+
+	public void setSiteName(String siteName) {
+		this.siteName = siteName;
 	}
 
 }
