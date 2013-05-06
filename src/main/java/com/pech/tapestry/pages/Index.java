@@ -47,4 +47,8 @@ public class Index
 
         return zone;
     }
+    
+    void onActivate(){
+    	System.out.println("Just a simple out to send greetings!! Hello World!");
+    }
 }
